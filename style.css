@@ -1,0 +1,63 @@
+h1 {
+    color: red;
+}
+#pokemon-input {
+width: 400px;
+height: 20px;
+
+
+}
+#indexMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.text-input {
+   width: 450px;
+   height: 20px; 
+}
+
+
+#indexSecondary{
+
+}
+
+#pokepediaLogoSmall {
+
+width: 270px;
+height: 270px;
+
+}
+#sprite-image {
+
+width: 300px;
+height: 300px;
+}
+
+#shiny-sprite {
+   
+    width: 300px;
+    height: 300px;
+}
+
+.centered {
+
+    display: flex;            /* Enable flexbox */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+
+}
+
+.bigAbilities
+
+
+#defaultlogo {
+
+width: 408px;
+height: 150px;
+
+}
