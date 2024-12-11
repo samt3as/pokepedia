@@ -19,7 +19,7 @@ if (searchButton) {
     })
 }
 // Check if the current page is the second page
-if (window.location.pathname.includes('/pokepedia2.html')) {
+if (window.location.pathname.includes('./pokepedia2.html')) {
     //  Fetch pokemon data
     fetchPokemonData();
 }
@@ -27,7 +27,7 @@ if (window.location.pathname.includes('/pokepedia2.html')) {
 // This function takes you to the second page (pokepedia2) and it attachs what pokemon you search for.
 function lookUpPokemon() {
     console.log("hello", pokemonInput.value)
-    window.location.href = `/pokepedia2.html?search=${pokemonInput.value.toLowerCase()
+    window.location.href = `./pokepedia2.html?search=${pokemonInput.value.toLowerCase()
         }`;
 }
 
@@ -164,7 +164,6 @@ async function getPokemonData(pokemon) {
 
 // Function to change the background color based on the Pokémon type
 function changeType(type) {
-    console.log('I got here')
     // Remove any existing type classes
     const indexSecondary = document.getElementById('indexSecondary');
     indexSecondary.className = '';  // Remove all existing classes
