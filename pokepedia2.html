@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokepedia</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main id="indexSecondary">  
-        <a href="/index.html" >
-            <img id="pokepediaLogoSmall" src="assets/pokepedia.png"/>
-        </a>
+    <main id="indexSecondary">
+        <header>
+            <a href="/index.html">
+                <img id="pokepediaLogoSmall" src="assets/pokepediapng-Photoroom.png" />
+            </a>
+        </header>
 
-        <div class="centered">
-            <div class="image-block">
-                <img id="sprite-image" />
-                <img id="defaultlogo" src="assets/theRealSlimDefault.png" />
-            </div>
-            <div class="image-blockButShiny">
-                <img id="shiny-sprite" />
-                <img id="shinylogo" src="assets/shiny-asset-logo.png" />
-            </div>
-        </div>
-        <div class="bigAbilities">
-        <img id="abilitieslogo" src="assets/abilities-logo.png" />
-        </div>
-        <div id="details-container"> 
-            <div id="name"></div>
-            <div id="types"></div>
-            <div id="abilities"></div>
-        </div>
-        <p id="flavourtext"> </p>
+        <div class="content">
 
+            <div class="pokemon-details">
+                <section class="basic-info">
+                    <div class="name-container">
+                        <img id="namesLogo" class="image-label" src="assets/NameLogo.png" />
+                        <div id="name"> </div>
+                    </div>
+                    <div id="typesname-container">
+                        <div class="typeImage">
+                            <img id="typesLogo" class="image-label" src="assets/theRealTypesLogo.png" />
+                        </div>
+                        <div id="types"></div>
+                    </div>
+                </section>
+
+                <section class="default-and-shiny-images">
+                    <div class="centered">
+                        <div class="images-container">
+                            <div class="image-block">
+                                <img id="sprite-image" />
+                                <img id="defaultlogo" class="image-label" src="assets/theRealSlimDefault.png" />
+                            </div>
+                            <div class="image-block">
+                                <img id="shiny-sprite" />
+                                <img id="shinylogo" class="image-label" src="assets/shiny-asset-logo.png" />
+                            </div>
+                </section>
+
+                <section class="abilities-info bigAbilities">
+                    <img id="abilitieslogo" class="image-label" src="assets/theRealAbilitiesLogo.png" />
+                    <div id="abilities"></div>
+                </section>
+
+
+
+            </div>
+
+            <section class="flavour-text-info">
+                <div class="accordion" id="pokemonAccordion"></div>
+            </section>
+        </div>
     </main>
-    
+
     <script src="/script.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,15 @@
-h1 {
-    color: red;
+body {
+    font-family: 'Press Start 2P', cursive;
 }
+
+
 #pokemon-input {
-width: 400px;
-height: 20px;
+    width: 400px;
+    height: 20px;
 
 
 }
+
 #indexMain {
     display: flex;
     flex-direction: column;
@@ -17,47 +20,275 @@ height: 20px;
 }
 
 .text-input {
-   width: 450px;
-   height: 20px; 
+    width: 450px;
+    height: 20px;
 }
 
 
-#indexSecondary{
+#indexSecondary {
+    background-color: white;
+}
 
+#indexSecondary.water {
+    background-color: blue;
+}
+
+#indexSecondary.grass {
+    background-color: rgb(0, 197, 0);
+}
+
+#indexSecondary.fire {
+    background-color: rgb(239, 68, 5);
+}
+
+#indexSecondary.electric {
+    background-color: yellow;
+}
+
+#indexSecondary.poison {
+    background-color: rgb(173, 23, 173);
+}
+
+#indexSecondary.ghost {
+    background-color: purple;
+}
+
+#indexSecondary.bug {
+    background-color: rgb(162, 57, 57);
+}
+
+#indexSecondary.dark {
+    background-color: black;
+}
+
+#indexSecondary.dragon {
+    background-color: #6173a8;
+}
+
+#indexSecondary.fairy {
+    background-color: rgb(244, 143, 160);
+}
+
+#indexSecondary.fighting {
+    background-color: rgb(112, 0, 0);
+}
+
+#indexSecondary.ice {
+    background-color: rgb(94, 173, 200);
+}
+
+#indexSecondary.steel {
+    background-color: rgb(147, 147, 147);
+}
+
+#indexSecondary.normal {
+    background-color: rgb(151, 151, 151);
+}
+
+#indexSecondary.psychic {
+    background-color: rgb(119, 72, 119);
+}
+
+#indexSecondary.flying {
+    background-color: rgb(81, 210, 253);
+}
+
+#indexSecondary.ground {
+    background-color: brown;
+}
+
+#indexSecondary.rock {
+    background-color: #b2a061;
 }
 
 #pokepediaLogoSmall {
 
-width: 270px;
-height: 270px;
+    width: 270px;
+    height: 270px;
 
 }
+
+div#typesnames-container {
+
+    border: 6px solid black;
+    width: 600px;
+}
+
+#typesLogo {
+
+    width: 300px;
+    height: 120px;
+}
+
 #sprite-image {
 
-width: 300px;
-height: 300px;
+    width: 300px;
+    height: 300px;
 }
 
 #shiny-sprite {
-   
+
     width: 300px;
     height: 300px;
 }
 
 .centered {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center horizontally */
 
-    display: flex;            /* Enable flexbox */
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
+
+    flex-direction: column;
 
 }
 
-.bigAbilities
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+    /* Stacks the children (img) vertically */
+    align-items: center;
+    /* Centers the images horizontally */
+}
+
+.image-block img {
+    margin: 5px 0;
+    /* Adds space between the images */
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    /* Enables flexbox layout */
+
+    gap: 20px;
+    /* Optional: adds a gap between the blocks */
+    border: 2px solid black;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+    /* Stack the image and logo vertically within each block */
+    align-items: center;
+    /* Center the images horizontally */
+}
+
+.bigAbilities {}
+
+.bigAbilities img {
+    margin-bottom: 20px;
+}
 
 
 #defaultlogo {
 
-width: 408px;
-height: 150px;
+    width: 408px;
+    height: 150px;
 
+}
+
+#namesLogo {
+
+    width: 200px;
+    height: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equal columns */
+}
+
+.name-container,
+#typesname-container,
+.abilities-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding-top: 20px;
+}
+
+
+#name,
+#types,
+#abilities {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.name-container {
+    padding-bottom: 24px;
+    border-bottom: 0px;
+}
+
+#name {
+    margin-top: 30px;
+}
+
+.pokemon-details {
+    background-color: gainsboro;
+}
+
+/* Style for the accordion container */
+.accordion {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.accordion-item {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for each accordion header */
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    width: 100%;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    /* Align text and arrow */
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+/* On hover change background color */
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+/* Style for the accordion content */
+.accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: none;
+    border-top: 1px solid #ccc;
+}
+
+/* When the content is shown, make it visible */
+.active .accordion-content {
+    display: block;
+}
+
+/* Style for the arrow (initially pointing down) */
+.arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when the section is expanded (active) */
+.active .arrow {
+    transform: rotate(180deg);
 }
