@@ -54,7 +54,7 @@ body {
 }
 
 #indexSecondary.bug {
-    background-color: rgb(162, 57, 57);
+    background-color: rgb(94, 46, 46);
 }
 
 #indexSecondary.dark {
@@ -70,10 +70,10 @@ body {
 }
 
 #indexSecondary.fighting {
-    background-color: rgb(112, 0, 0);
+    background-color: rgb(161, 42, 42);
 }
 
-#indexSecondary.ice {
+s #indexSecondary.ice {
     background-color: rgb(94, 173, 200);
 }
 
