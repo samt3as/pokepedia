@@ -26,7 +26,6 @@ if (window.location.pathname.includes('pokepedia2.html')) {
 
 // This function takes you to the second page (pokepedia2) and it attachs what pokemon you search for.
 function lookUpPokemon() {
-    console.log("hello", pokemonInput.value)
     window.location.href = `pokepedia2.html?search=${pokemonInput.value.toLowerCase()
         }`;
 }
@@ -60,9 +59,9 @@ async function fetchPokemonData() {
     displayTypes(pokemonTypes)
     displayFlavorText(englishFlavourData)
 
-    console.log('I did this');
+
     changeType(pokemonTypes[0]);
-    console.log('I did this, x2');
+
     // displayStrengths(strengths)
 }
 
